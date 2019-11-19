@@ -13,3 +13,11 @@ git log -p -- <file>
 ```
 git log --follow -p -- <file>
 ```
+
+## CMD
+
+#### to copy the key to the ssh-server
+- Require enable 'Remote Login' from 'Sharing' in the server device (Mac OS setting).
+```
+cat ~/.ssh/id_rsa.pub| ssh <user>@<ip address> 'cat >> ~/.ssh/authorized_keys'
+```
